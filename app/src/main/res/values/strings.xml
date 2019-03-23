@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShareAplication</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="action_send">send</string>
+    <string name="action_share">share</string>
+</resources>

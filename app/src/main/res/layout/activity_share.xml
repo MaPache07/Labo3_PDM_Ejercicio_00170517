@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity"
+    android:padding="@dimen/general_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/new_m_margin_top" />
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/new_margin_top" />
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/new_margin_top" />
+    <TextView
+        android:id="@+id/text_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/new_margin_top" />
+    <Button
+        android:id="@+id/button_send2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_share"
+        android:textSize="@dimen/text_size"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/new_margin_top"/>
+</LinearLayout>

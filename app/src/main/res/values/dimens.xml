@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding">8dp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="general_margin">12dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="new_margin_top">30dp</dimen>
+    <dimen name="new_m_margin_top">22dp</dimen>
+    <dimen name="big_text">22dp</dimen>
+</resources>
