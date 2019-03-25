@@ -31,25 +31,19 @@ public class MainActivity extends AppCompatActivity {
 
         initializeViews();
 
-        radio_male.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gender = "Male";
-            }
-        });
-        radio_female.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gender = "Female";
-            }
-        });
-
         button_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 username = edit_username.getText().toString();
                 password = edit_password.getText().toString();
                 email = edit_email.getText().toString();
+
+                if (radio_male.isChecked()) {
+                    gender = radio_male.getText().toString();
+                }
+                else{
+                    gender = radio_female.getText().toString();
+                }
 
                 Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
                 Matcher matcher = pattern.matcher(email);
@@ -73,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 
     public void initializeViews(){
